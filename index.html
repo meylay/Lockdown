@@ -548,7 +548,7 @@
       templateText = templateText.replace('!endDate!', val1);
 
       var blob = new Blob([templateText], {
-        type: "text/plain;charset=utf-8"
+        type: 'application/octet-stream'
       });
       saveAs(blob, filename);
     }
